@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "biomechanics-signal-tools"
+version = "0.4.0"
+description = "Utilities for signal processing and quaternion-based 3D rotations"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.23", "scipy>=1.9", "typing-extensions>=4.0"]
+classifiers = ["Programming Language :: Python :: 3", "Topic :: Scientific/Engineering"]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.6"]
+
+[dependency-groups]
+dev = ["pytest>=7", "ruff>=0.6", "build>=1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
