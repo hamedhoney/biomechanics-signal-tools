@@ -1,6 +1,6 @@
-# Biomechanics Signal Tools
+# Signal Tools
 
-Numerical utilities for biomechanics time series, force-plate and EMG-style
+Numerical utilities for time series, force-plate and EMG-style
 signals, motion capture, and 3-D orientation analysis.
 
 **Version 0.4.0 | Python 3.9+ | NumPy + SciPy | uv**
@@ -42,7 +42,7 @@ Run the package's build step with `uv build`. To install from a published
 Git repository, use `uv add git+https://github.com/OWNER/REPOSITORY.git`
 after replacing the URL with the actual repository.
 
-## A quick biomechanics workflow
+## A quick workflow
 
 ```python
 import numpy as np
